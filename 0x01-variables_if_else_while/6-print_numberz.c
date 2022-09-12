@@ -5,9 +5,9 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main(void) 
 {
-	while (d < 58)
+	while ( d < 58 )
 	{
 		putchar(d);
 		d++;
