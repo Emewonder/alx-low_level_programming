@@ -24,14 +24,14 @@ void print_times_table(int n)
 					_putchar(' ');
 				if (result >= 100)
 				{
-					_putchar ((result / 100) + '0');
-						_putchar ((result / 10) % 10 + '0');
+					_putchar((result / 100) + '0');
+						_putchar((result / 10) % 10 + '0');
 								}
 								else if (result <= 99 && result  >= 10)
 								{
-							_putchar ((result / 10) + '0');
+							_putchar((result / 10) + '0');
 							}
-						_putchar ((result % 10) + '0');
+						_putchar((result % 10) + '0');
 						}
 					_putchar('\n');
 					}
