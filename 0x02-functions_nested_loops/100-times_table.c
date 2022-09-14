@@ -13,7 +13,6 @@ void print_times_table(int n)
 		for (digit = 0; digit <= n; digit++)
 		{
 			_putchar('0');
-
 			for (mult = 1; mult <= n; mult++)
 			{
 				_putchar(',');
@@ -21,7 +20,6 @@ void print_times_table(int n)
 				result = digit * mult;
 				if (result <= 99)
 					_putchar(' ');
-
 				if (result <= 9)
 					_putchar(' ');
 				if (result >= 100)
