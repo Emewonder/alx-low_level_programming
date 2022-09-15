@@ -18,6 +18,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				result = digit * mult;
+			}
 				if (result <= 99)
 					_putchar(' ');
 				if (result <= 9)
@@ -34,7 +35,6 @@ void print_times_table(int n)
 						_putchar((result % 10) + '0');
 						}
 					_putchar('\n');
-					}
 					}
 					}
 
