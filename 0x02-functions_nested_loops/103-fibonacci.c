@@ -1,47 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_times_table - prints the n times table, starting with 0
- * description:if 'n' is greater than 15 or less than 0, print nothing.
- * @n: int type number
+ * main - main block
+ * Description: computes and prints even  number < 4,000,000
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
  */
-void print_times_table(int n)
+int main(void)
 {
-	int x = 0, y, z;
+	int a = 0, b = 1, next = 0;
+	int sum = 0;
 
-	if (n > 15 || n < 0)
-		return;
-	while (x <= n)
+	while (next < 4000000)
 	{
-		for (y = 0; y <= n; y++)
-		{
-			z = x * y;
-			if (z > 99)
-			{
-				_putchar(z / 100 + '0');
-				_putchar((z / 10 % 10) + '0');
-				_putchar(z % 10 + '0');
-			}
-			else if (z > 9)
-			{
-				_putchar('');
-				_putchar(z / 10 + '0');
-				_putchar(z % 10 + '0');
-			}
-			else if (y != 0)
-			{
-				_putchar('');
-				_putchar('');
-				_putchar(z + '0');
-			}
-			else
-				_putchar(z + '0');
-			if (y != n)
-			{
-				_putchar('');
-				_putchar('');
-			}
-		}
-		_putchar('\n');
-		x++;
+		next = a + b;
+		a = b;
+		b = next;
+		if (next % 2 == 0)
+			sum += next;
 	}
+	printf("%i\n", sum);
+	return (0);
 }
