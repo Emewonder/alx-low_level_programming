@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+This contains the programs written for the low-level programming and algorithm track at the alx-Software Engineering program by ALX. I am learning about data structures, algorithms and other low-level programming concepts while working in the C language.
